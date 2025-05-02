@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact EcoStore</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .container{
+            background-color: #222;
+            color: #999;
+            padding: 3rem;
+        }
+        .form-control{
+            background: transparent;
+            border: 2px solid #999;
+        }
+        .form-control::placeholder{
+            color: #999;
+        }
+        .form-control:focus{
+            background: transparent;
+            border: 2px solid #f7f7f7;
+            outline-color: white;
+            color: #f7f7f7;
+        }
+        .col-md-12 h1{
+            color: #f7f7f7;
+        }
+        .col-md-12 h1 span{
+            color: yellow;
+            font-family: cursive;
+            font-style: italic;
+        }
+        #ContactForm{
+            background-color: #333;
+        }
+        form{
+            margin-top: 15px;
+        }
+        .col-md-2,.col-md-4{
+            margin-bottom: 15px;
+        }
+        .comment-section-text{
+            text-align: center;
+            margin-bottom: 10px;
+            color: #f7f7f7;
+        }
+        .comment-section-text::after{
+            content: "";
+            width: 300px;
+            height: 3px;
+            background-color: #f7f7f7;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContactForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Contact <span>EcoStore</span></h1>
+                </div>
+            </div>
+            <form action="">
+                <div class="row  form-group">
+                    <div class="col-md-2"><h3>Name :</h3></div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Enter Your Name">
+                    </div>
+                    <div class="col-md-2"><h3>Email :</h3></div>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-md-2"><h3>Product:</h3></div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" placeholder="Enter Your Product Name">
+                    </div>
+                    <div class="col-md-2"><h3>Quantity:</h3></div>
+                    <div class="col-md-4">
+                        <input type="number" class="form-control" placeholder="Enter Your Quantity">
+                    </div>
+                    <div class="col-md-12 comment-section-text"><h3>Your Comment Here</h3></div>
+                    <div class="col-md-12">
+                        <textarea rows="10" name="" id="" class="form-control" placeholder="Tells here about our EcoStore"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
